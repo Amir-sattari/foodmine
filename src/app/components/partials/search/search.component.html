@@ -1,0 +1,6 @@
+<div>
+    <input #search type="text" placeholder="Search for food mine!"
+    (keyup.enter)="searchMethod(search.value)"
+    [value]="searchTerm">
+    <button (click)="searchMethod(search.value)">Search</button>
+</div>
